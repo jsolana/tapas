@@ -23,3 +23,7 @@ go get github.com/jsolana/tapas
 ### Data structures
 
 TBD
+
+## Credits
+
+`tapas` logo was generated using [replicate](https://replicate.com/)
