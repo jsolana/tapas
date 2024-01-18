@@ -7,7 +7,7 @@
     <a href="https://github.com/jsolana/tapas/issues"><img src="https://img.shields.io/github/issues/jsolana/tapas.svg?style=flat-square" alt="issues"></a>
     <a href="https://github.com/jsolana/tapas/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="license"></a>
 </p>
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+
 `tapas` is a Go library providing textbook implementations of generic data structures & algorithms. Its design focuses on simplicity, performance, and concurrent usage.
 
 ## Usage
