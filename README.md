@@ -18,11 +18,19 @@ Using this package requires a working Go environment. [See the install instructi
 go get github.com/jsolana/tapas
 ```
 
-## Content
+## Data structures
 
-### Data structures
+### List
 
-TBD
+A *doubly linked list* is a type of linked list in which each node contains a data element and two pointers, one pointing to the next node in the sequence (forward direction) and another pointing to the previous node (backward direction). Unlike a singly linked list, where nodes only have a reference to the next node, a doubly linked list allows traversal in both forward and backward directions.
+
+Each node in a doubly linked list consists of three fields:
+
+- *Value*: The actual data or value stored in the node.
+- *Next Pointer*: A pointer that points to the next node in the sequence.
+- *Previous Pointer*: A pointer that points to the previous node in the sequence.
+
+The doubly linked list structure provides advantages such as easy backward traversal, efficient insertion and deletion of nodes at both the beginning and end of the list, and the ability to delete a node without needing a reference to its predecessor. However, it requires more memory compared to a singly linked list due to the additional storage needed for the backward pointers.
 
 ## Credits
 
