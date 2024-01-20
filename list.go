@@ -12,8 +12,7 @@ type Node[T any] struct {
 	Value      T
 }
 
-// Pending possinble operations
-// - PushBack  or Append inserts a new element e with value v at the back of list l and returns e.
+// Pending possinble operations.
 // - Insert: Insert an element at a specific position in the list.
 // - InsertBefore inserts a new element e with value v before the mark element and returns e.
 // - InsertAfter inserts a new element e with value v after the mark element and returns e.
@@ -64,6 +63,19 @@ func (l *List[T]) PushFront(v T) {
 
 	l.head = n
 	l.len++
+}
+
+// PushBack (aka Append) inserts a new value at the back of list
+func (l *List[T]) PushBack(v T) {
+	if l.head == nil {
+		l.PushFront(v)
+	} else {
+		n := &Node[T]{Value: v}
+		n.prev = l.Back()
+		l.Back().next = n
+		l.head.prev = n
+		l.len++
+	}
 }
 
 // GetAll return an array of T with all values of the list.
